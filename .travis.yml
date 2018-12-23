@@ -2,6 +2,9 @@ language: java
 sudo: true
 before_script: cd InviteManager
 dist: trusty
+cache:
+  directories:
+  - $HOME/.m2
 jdk:
   - oraclejdk8
 install: true
