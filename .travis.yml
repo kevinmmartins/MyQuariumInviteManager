@@ -1,0 +1,10 @@
+language: java
+sudo: true
+before_script: cd InviteManager
+dist: trusty
+jdk:
+  - oraclejdk8
+install: true
+script: mvn clean install
+before_install:
+  - chmod +x mvnw
