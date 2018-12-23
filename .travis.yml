@@ -5,6 +5,4 @@ dist: trusty
 jdk:
   - oraclejdk8
 install: true
-script: mvn clean install
-before_install:
-  - chmod +x mvnw
+script: mvn clean install -DskipTests
